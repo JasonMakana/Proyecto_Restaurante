@@ -10,6 +10,11 @@ use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
+
+    public function ordenes(){
+        return $this->hasMany(Orden::class, 'user_id');
+    }
+
     /** @use HasFactory<UserFactory> */
     use HasFactory, Notifiable;
 

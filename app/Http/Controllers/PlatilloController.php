@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\platillo;
+use App\Models\Platillo;
 use Illuminate\Http\Request;
 
 class PlatilloController extends Controller
